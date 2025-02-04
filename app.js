@@ -1,16 +1,35 @@
+const express = require("express")
+const app = express()
 
-const form = document.querySelector("#location")
-
-form.addEventListener("click", function(e){
-    e.preventDefault()
-    fetch("https://api.weatherapi.com/v1/current.json?key=a8e4f0b4ef48439180934250250102&q=London&aqi=no")
-    .then(response => {
-        if(!response.ok) {
-            throw new Error (`HTTP error! Status: $response.status`)
-        }
-        return response.json()
-    })
-    .then (data => (data))
-    .catch (error => console.error('Fetch error:', error))
-    
+app.listen(3000, () =>{
+    console.log("Listening on Port 3000")
 })
+
+
+// require('dotenv').config()
+
+// const form = document.querySelector("#location")
+// // const apiKey = process.env.API_KEY
+// const input = document.querySelector("#input")
+
+// input.addEventListener('input', () => {
+//     console.log(input.value)
+// })
+
+// form.addEventListener("click", function(e){
+//     e.preventDefault()    
+//     async function weatherDataTest () {
+//         try{
+//             const response = await fetch(`https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${input.value}&aqi=no`)
+//             const data = await response.json()
+//             let location = data.location.name
+//             let localTime = data.location.localtime
+//             let localTemp = data.current.temp_f
+
+//             console.log(location,localTime,localTemp)
+//         } catch (error) {
+//             console.error("Error fetching data:", error)
+//         }
+//     }
+//     weatherDataTest()
+// })

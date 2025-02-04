@@ -4,18 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div>
-        <h1>Weather App V1!</h1>
     </div>
     <div>
-        <div>
+        <div id="mainDiv">
             <form action = "" method="get" class="weatherInfo">
+                <h1>Weather App V1!</h1>
                 <div class ="formDiv">
+                    <input type="text" id="input">
                     <button type="submit" id="location" placeholder=>Submit for location</button>
                 </div>
-                <p id="output"></p>
+                <div id="output">
+                    <section id = "apiInfo">
+
+                    </section>
+                </div>
             </form>
         </div>
     </div>
