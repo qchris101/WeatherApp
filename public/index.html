@@ -6,8 +6,12 @@
     <title>Weather App</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body id="body">
+    <p id="error_message" style="color: red; display: none;"></p>
     <div>
+        <h2 id="location_name"></h2>
+        <img id="temp_icon">
+        <p id="weather_text"></p>
     </div>
     <div>
         <div id="mainDiv">
@@ -18,9 +22,11 @@
                     <button type="submit" id="getWeather" placeholder=>Submit for location</button>
                 </div>
                 <div id="output">
-                    <section id = "apiInfo">
-
-                    </section>
+                    <section id ="temp_f"> </section>
+                    <section id ="feel_like"></section>
+                    <section id ="humid"></section>
+                    <section id ="precip"></section>
+                    <section id ="wind_mph"></section>
                 </div>
             </form>
         </div>

@@ -3,18 +3,39 @@ h1 {
     justify-content: center;
     align-items: center;
 }
+#body{
+    background: #faedcd;
+}
 #mainDiv {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: lightblue;
+    background-color: #faedcd;
     height: 100vh;
 }
 
 .weatherInfo{
-    background: white;
+    background: #d4a373;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     text-align: center;
+}
+
+#getWeather {
+    background-color: #d4a373;
+    color: white;
+    padding: 6px;
+    border-radius: 9999px;
+    transition: background-color 0.3s;
+}
+#location{
+    border-radius: 15px;
+    padding: 6px;
+}
+#getWeather:hover {
+    background-color: #ccd5ae;
+}
+.weatherInfo:focus {
+   outline: none;
 }
