@@ -1,37 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="https://kit.fontawesome.com/14ff20a58d.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
 </head>
 <body id="body">
     <p id="error_message" style="color: red; display: none;"></p>
-    <div>
+    <div id="weatherDiv">
         <h2 id="location_name"></h2>
-        <img id="temp_icon">
+        <img id="temp_icon" class="box">
         <p id="weather_text"></p>
     </div>
     <div>
-        <div id="mainDiv">
-            <form action = "" method="get" class="weatherInfo">
-                <h1>Weather App V1!</h1>
+        <div id="mainDiv" class="container is-fluid">
+            <form action = "" method="get" id="weatherInfo">
+                <h1 class="title">Weather App V1!</h1>
                 <div class ="formDiv">
-                    <input type="text" id="location" placeholder="Enter location" >
-                    <button type="submit" id="getWeather" placeholder=>Submit for location</button>
-                </div>
-                <div id="output">
-                    <section id ="temp_f"> </section>
-                    <section id ="feel_like"></section>
-                    <section id ="humid"></section>
-                    <section id ="precip"></section>
-                    <section id ="wind_mph"></section>
+                    <input type="text" id="location" class="input is-rounded " placeholder="Enter location" >
+                    <button type="submit" id="getWeather" class="button is-dark is-rounded" ><i class="fa-solid fa-magnifying-glass"></i></button>
                 </div>
             </form>
+                <div class="card-content">
+                    <div id="output" >
+                        <div id ="temp_f" class="box" > </div>
+                        <div id ="feel_like" class="box" ></div>
+                        <div id ="humid" class="box"></div>
+                        <div id ="precip" class="box"></div>
+                        <div id ="wind_mph" class="box"></div>
+                    </div>
+                </div>
         </div>
     </div>
-        
+    
     <script src="app.js"></script>
 </body>
 </html>
