@@ -39,3 +39,8 @@ h1 {
 .weatherInfo:focus {
    outline: none;
 }
+
+#temp_icon {
+    border-color: rgba(0,0,0,0.2);
+    border-radius: 15px;
+}
