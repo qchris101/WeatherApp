@@ -7,9 +7,11 @@ h1 {
 #weatherDiv{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap:10px
-
+    align-items: flex-end;
+    gap:10px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    color: white;
 }
 #location{
     background-color: rgb(231, 231, 231);
