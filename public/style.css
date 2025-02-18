@@ -4,31 +4,38 @@ h1 {
     align-items: center;
     color: black !important;
 }
-#weatherDiv,#mainDiv{
+#weatherDiv{
     display: flex;
     flex-direction: column;
     align-items: center;
     gap:10px
 
 }
+#location{
+    background-color: rgb(231, 231, 231);
+    
+}
+input{
+    color: black;
+}
 #output{
-
+    display: flex;
+    justify-content: space-between;
     color: white !important;
 }
-#body{
-    background: #faedcd;
-}
+
 #mainDiv {
     margin-top: 100px;
-    background-color: #faedcd;
+   
     height: 100vh;
 }
-
+::placeholder{
+    color:rgb(31, 31, 31) !important
+}
 #weatherInfo{
-    background: #d4a373;
-    padding: 20px;
+    /* padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); */
     text-align: center;
 }
 
@@ -40,6 +47,7 @@ h1 {
 #location{
     border-radius: 15px;
     padding-top: 6px;
+    color: black;
 }
 #getWeather:hover {
     background-color: #FAEDCD !important;
