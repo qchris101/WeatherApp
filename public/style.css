@@ -9,8 +9,8 @@ h1 {
     flex-direction: column;
     align-items: flex-end;
     gap:10px;
-    margin-right: 50px;
-    margin-bottom: 50px;
+    margin: 50px,25px,0px,25px;
+    /* margin-bottom: 50px; */
     color: white;
 }
 #location{
@@ -58,3 +58,25 @@ input{
    outline: none;
 }
 
+#ImgDiv{
+    position: relative;
+    display: inline-block;
+}
+
+#temp_icon {
+    display: block;
+    width: 100%;
+}
+
+#location_name{
+    position: absolute;
+    top: 50%;  /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Perfect centering */
+    color: white;  /* Adjust text color */
+    font-size: 24px;
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.5); /* Optional: Semi-transparent background */
+    padding: 10px;
+    border-radius: 5px;
+}

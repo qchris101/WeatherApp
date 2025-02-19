@@ -4,6 +4,7 @@ const cors = require("cors")
 const app = express()
 const PORT = 8000
 app.use(cors())
+app.use(express.static('public'))
 // console.log("API Key:", apiKey)
 app.get('/weather', async (req,res) => {
     const city = req.query.city 

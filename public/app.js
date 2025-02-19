@@ -15,6 +15,18 @@ const weatherElements = {
     img : document.querySelector("#temp_icon"),
 }
 
+const customWeatherImg = {
+    "Partly cloudy": "./Images/Partly_cloudy.jpg",
+    "Sunny": "./Images/Sunny.jpg",
+    "Light snow": "./Images/Snow.jpg",
+    "Rain": "./Images/Rain.jpg"
+}
+
+const weatherImg = (data) =>{
+        const condition = data.current.condition.text
+        return customWeatherImg[condition]
+    } 
+
 
 const fetchWeather = async (location) => {
     try{
@@ -44,7 +56,8 @@ const updateUI = (data) => {
     weatherElements.humid.innerText= "Humidity: " + data.current.humidity
     weatherElements.precip.innerText= "Precipitation: " + data.current.precip_in
     weatherElements.wind_mph.innerText= "Current Wind Speed: " + data.current.wind_mph +"mph"
-    weatherElements.img.setAttribute('src', `https:${data.current.condition.icon}`)
+    const imgSrc = weatherImg(data)
+    weatherElements.img.setAttribute('src', `${imgSrc}`)
 }
 
 form.addEventListener("click", async (e) =>{
@@ -54,4 +67,5 @@ form.addEventListener("click", async (e) =>{
     const data = await fetchWeather(location)
     updateUI(data)    
         input.value = ""
+        console.log(data.current.condition.text)
 })
