@@ -5,12 +5,6 @@ h1 {
     color: black !important;
 }
 #weatherDiv{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    gap:10px;
-    margin: 50px,25px,0px,25px;
-    /* margin-bottom: 50px; */
     color: white;
 }
 #location{
@@ -21,14 +15,19 @@ input{
     color: black;
 }
 #output{
-    display: flex;
-    justify-content: space-between;
+    margin:50px;
+    padding: 100px;
     color: white !important;
 }
-
+.card{
+    padding: 50px;
+    background-color: white !important;
+    color: black !important;
+    box-shadow: none;
+}
 #mainDiv {
     margin-top: 100px;
-   
+    
     height: 100vh;
 }
 ::placeholder{
@@ -55,12 +54,13 @@ input{
     background-color: #FAEDCD !important;
 }
 #weatherInfo:focus {
-   outline: none;
+    outline: none;
 }
 
 #ImgDiv{
     position: relative;
     display: inline-block;
+    background-color: rgb(37, 37, 37) !important;
 }
 
 #temp_icon {
@@ -76,7 +76,11 @@ input{
     color: white;  /* Adjust text color */
     font-size: 24px;
     font-weight: bold;
-    background: rgba(0, 0, 0, 0.5); /* Optional: Semi-transparent background */
+    /* Optional: Semi-transparent background */
     padding: 10px;
     border-radius: 5px;
 }
+nav{
+    margin-top: 10px;
+}
+

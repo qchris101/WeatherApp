@@ -15,25 +15,34 @@
         
         <form action = "" method="get" id="weatherInfo">
             <nav>
-                <input type="text" id="location" class="input is-rounded " placeholder="Enter location" >
+                <input type="text" id="location" class="input is-rounded " placeholder="Search City or Zip Code" >
                 <button type="submit" id="getWeather" class="button is-dark is-rounded" ><i class="fa-solid fa-magnifying-glass"></i></button>
             </nav>
         </form>
 
-        <div id="weatherDiv" class="box">
+        <div id="weatherDiv" >
 
-            <div id="ImgDiv">
+            <div id="ImgDiv" class="card">
+                <h3 id="location_name" ></h3>
+                <p id="weather_text" class="title">
+                    
+                    <section >
+                        <div id ="temp_f"> </div>
+        
+                    </section>
+                </p>
                 <img id="temp_icon" >
-                <p id="weather_text"></p>
-                <h2 id="location_name"></h2>
             </div>
 
-            <div id="output" class="container">
-                <div id ="temp_f" class="column is-quarter"> </div>
-                <div id ="feel_like" class="column is-quarter"></div>
-                <div id ="humid" class="column is-quarter"></div>
-                <div id ="precip" class="column is-quarter"></div>
-                <div id ="wind_mph" class="column is-quarter"></div>
+            <div id="output" class="column">
+
+                <section class="card">
+                <div id ="feel_like" class=""></div>
+                <div id ="wind_mph" class=""></div>
+                <div id ="precip" class=""></div>
+                <div id ="humid" class=""></div>
+
+                </section>
             </div>
         </div>
     </div>
