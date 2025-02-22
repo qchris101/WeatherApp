@@ -3,6 +3,14 @@ const form = document.querySelector("#getWeather")
 const input = document.querySelector("#location")
 const showError = document.querySelector("#error_message")
 
+function toggleVis(elementId) {
+    const element = document.getElementById(elementId);
+    if (element.style.display === "none" || element.style.display === "") {
+        element.style.display = "block"; // Show element
+    } else {
+        element.style.display = "none"; // Hide element
+    }
+}
 
 const weatherElements = {
     temp_f : document.querySelector("#temp_f"),

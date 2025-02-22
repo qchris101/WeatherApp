@@ -8,15 +8,15 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
 </head>
-<body id="body">
+<body>
     <p id="error_message" style="color: red; display: none;"></p>
 
-    <div>
+    <div class="column">
         
         <form action = "" method="get" id="weatherInfo">
             <nav>
                 <input type="text" id="location" class="input is-rounded " placeholder="Search City or Zip Code" >
-                <button type="submit" id="getWeather" class="button is-dark is-rounded" ><i class="fa-solid fa-magnifying-glass"></i></button>
+                <button type="submit" id="getWeather" class="button is-dark is-rounded"><i class="fa-solid fa-magnifying-glass"></i></button>
             </nav>
         </form>
 
@@ -24,12 +24,12 @@
 
             <div id="ImgDiv" class="card">
                 <h3 id="location_name" ></h3>
-                <p id="weather_text" class="title">
+                <p id="weather_text" >
                     
-                    <section >
-                        <div id ="temp_f"> </div>
+                    
+                        <div id ="temp_f" class=""> </div>
         
-                    </section>
+                    
                 </p>
                 <img id="temp_icon" >
             </div>

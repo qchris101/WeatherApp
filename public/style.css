@@ -1,8 +1,19 @@
+:root {
+    --bulma-body-background-color: rgb(252, 252, 240) !important;
+}
 h1 {
     display: flex;
     justify-content: center;
     align-items: center;
     color: black !important;
+}
+#feel_like,#wind_mph,#precip{
+    margin-bottom: 15px;
+    font-weight: bold;
+    border-bottom: 1px solid rgb(95, 95, 95) !important;
+}
+#humid {
+    font-weight: bold;
 }
 #weatherDiv{
     color: white;
@@ -15,9 +26,10 @@ input{
     color: black;
 }
 #output{
-    margin:50px;
-    padding: 100px;
+    margin:55px;
+    margin-top: -45px;
     color: white !important;
+    /* box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1); */
 }
 .card{
     padding: 50px;
@@ -41,13 +53,13 @@ input{
 }
 
 #getWeather {
-    margin-top: 25px;
+    margin: 25px;
     background-color: #CCD5AE !important;
     color: black;   
 }
 #location{
     border-radius: 15px;
-    padding-top: 6px;
+    margin: 6px;
     color: black;
 }
 #getWeather:hover {
@@ -56,14 +68,20 @@ input{
 #weatherInfo:focus {
     outline: none;
 }
-
+section{
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1) !important;
+}
 #ImgDiv{
     position: relative;
+    margin:40px;
     display: inline-block;
-    background-color: rgb(37, 37, 37) !important;
+    background-color: rgb(255, 255, 255) !important;
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 #temp_icon {
+    border-radius: 5px;
     display: block;
     width: 100%;
 }
