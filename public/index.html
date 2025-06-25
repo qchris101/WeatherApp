@@ -10,39 +10,61 @@
 </head>
 <body>
     <p id="error_message" style="color: red; display: none;"></p>
+    <div class="container mt-6 search-bar">
+        <div class="box ">
+            <form action = "" method="get" id="weatherInfo" class="field has-addons is-justify-content-center">
+                <div class="control is-expanded">
 
-    <div class="column">
-        
-        <form action = "" method="get" id="weatherInfo">
-            <nav>
-                <input type="text" id="location" class="input is-rounded " placeholder="Search City or Zip Code" >
-                <button type="submit" id="getWeather" class="button is-dark is-rounded"><i class="fa-solid fa-magnifying-glass"></i></button>
-            </nav>
-        </form>
+                    <input 
+                    type="text" 
+                    id="location" 
+                    class="input is-rounded " 
+                    placeholder="Search City or Zip Code">
+                </div>
+
+                <div class="control">
+                    <button 
+                    type="submit" 
+                    id="getWeather" 
+                    class="button is-dark is-rounded p-3 ">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    
+    <div class="container">
 
         <div id="weatherDiv" >
 
-            <div id="ImgDiv" class="card">
+            <div id="ImgDiv" >
                 <h3 id="location_name" ></h3>
+
                 <p id="weather_text" >
-                    
-                    
                         <div id ="temp_f" class=""> </div>
         
-                    
                 </p>
-                <img id="temp_icon" >
+                <figure class="image is-128-128">
+
+                    <img class="is is-rounded" id="temp_icon" >
+                </figure>
             </div>
 
-            <div id="output" class="column">
 
-                <section class="card">
-                <div id ="feel_like" class=""></div>
-                <div id ="wind_mph" class=""></div>
-                <div id ="precip" class=""></div>
-                <div id ="humid" class=""></div>
 
-                </section>
+
+
+            <div id="output" class="box">
+
+                
+                <div id ="feel_like" class="card mb-3 social-card"></div>
+                <div id ="wind_mph" class="card mb-3 social-card"></div>
+                <div id ="precip" class="card mb-3 social-card"></div>
+                <div id ="humid" class="card mb-3 social-card"></div>
+
+                
             </div>
         </div>
     </div>
