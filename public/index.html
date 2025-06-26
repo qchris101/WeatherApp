@@ -13,7 +13,7 @@
     <div class="container mt-6 search-bar">
         <div class="box ">
             <form action = "" method="get" id="weatherInfo" class="field has-addons is-justify-content-center">
-                <div class="control is-expanded">
+                <div class="control is-expanded ">
 
                     <input 
                     type="text" 
@@ -35,37 +35,37 @@
     </div>
     
     
-    <div class="container">
+    <div class="container mt-6">
 
-        <div id="weatherDiv" >
+        <div id="weatherDiv">
 
-            <div id="ImgDiv" >
-                <h3 id="location_name" ></h3>
-
-                <p id="weather_text" >
-                        <div id ="temp_f" class=""> </div>
-        
-                </p>
-                <figure class="image is-128-128">
-
-                    <img class="is is-rounded" id="temp_icon" >
+            <div id="ImgDiv" class="card is-relative test">
+                <div class="card-content">
+                    <h3 id="location_name" class="title is-4" ></h3>
+                    <h3 id="weather_text" class="subtitle is-5 mb-1"></h3> 
+                    <h3 id="temp_f" class="subtitle is-5 "></h3>
+                </div>
+                <figure class="image is-3by1">
+                    <img id="temp_icon">
                 </figure>
+                
+                <div class="card">
+                    <h3 id="feel_like" class="subtitle is-6 pt-4"></h3>
+                    <h3 id ="wind_mph" class="subtitle is-6"></h3>
+                    <h3 id ="precip" class="subtitle is-6"></h3>
+                    <h3 id ="humid" class="subtitle is-6 pb-4"></h3>
+                </div>
             </div>
 
 
 
 
+<!-- 
+            <div id="output" class="card-content" >
 
-            <div id="output" class="box">
-
-                
-                <div id ="feel_like" class="card mb-3 social-card"></div>
-                <div id ="wind_mph" class="card mb-3 social-card"></div>
-                <div id ="precip" class="card mb-3 social-card"></div>
-                <div id ="humid" class="card mb-3 social-card"></div>
 
                 
-            </div>
+            </div> -->
         </div>
     </div>
     

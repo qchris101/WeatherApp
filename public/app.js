@@ -24,10 +24,10 @@ const weatherElements = {
 }
 
 const customWeatherImg = {
-    "Partly cloudy": "./Images/Partly_cloudy.jpg",
-    "Sunny": "./Images/Sunny.jpg",
-    "Light snow": "./Images/Snow.jpg",
-    "Rain": "./Images/Rain.jpg"
+    "Partly cloudy": "./Images/WeatherImage/Partly_cloudy.jpg",
+    "Sunny": "./Images/WeatherImage/Sunny.jpg",
+    "Light snow": "./Images/WeatherImage/Snow.jpg",
+    "Rain": "./Images/WeatherImage/Rain.jpg"
 }
 
 const weatherImg = (data) =>{
@@ -57,7 +57,7 @@ const updateUI = (data) => {
     if(!data) return
     errorUI("")
     const {location, current } = data
-    weatherElements.location_name.innerText = data.location.name + ", "+ data.location.region
+    weatherElements.location_name.innerText = "Current Weather for " + data.location.name + ", "+ data.location.region
     weatherElements.temp_f.innerText = data.current.temp_f + "°F"
     weatherElements.weather_text.innerText= data.current.condition.text
     weatherElements.feel_like.innerText= "Feels like: " + data.current.feelslike_f + "°F"
