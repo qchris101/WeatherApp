@@ -20,7 +20,7 @@ const weatherElements = {
     humid : document.querySelector("#humid"),
     precip : document.querySelector("#precip"),
     wind_mph : document.querySelector("#wind_mph"),
-    img : document.querySelector("#temp_icon"),
+    img : document.querySelector("#iconImg"),
 }
 
 const customWeatherImg = {
@@ -64,8 +64,8 @@ const updateUI = (data) => {
     weatherElements.humid.innerText= "Humidity: " + data.current.humidity
     weatherElements.precip.innerText= "Precipitation: " + data.current.precip_in
     weatherElements.wind_mph.innerText= "Current Wind Speed: " + data.current.wind_mph +"mph"
-    const imgSrc = weatherImg(data)
-    weatherElements.img.setAttribute('src', `${imgSrc}`)
+    // const imgSrc = weatherImg(data)
+    weatherElements.img.setAttribute("src" ,`${data.current.condition.icon}`)
 }
 
 form.addEventListener("click", async (e) =>{

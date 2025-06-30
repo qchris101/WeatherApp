@@ -35,26 +35,32 @@
     </div>
     
     
-    <div class="container mt-6">
+    <div class="container mt-6 mainInfo">
 
         <div id="weatherDiv">
 
-            <div id="ImgDiv" class="card is-relative test bulma-overlay-mixin">
+            <!-- <figure class="image is-3by1">
+                <img id="temp_icon">
+            </figure> -->
+            <div id="ImgDiv" class="card is-relative">
                 <div class="card-content">
-                    <h3 id="location_name" class="title is-4" ></h3>
+                    <h3 id="location_name" class="title is-4 has-text-black" ></h3>
+                </div>
+                <div class="card-content">
+                    <figure class="image is-96x96">
+                        <img id="iconImg">
+                    </figure>
+                    
                     <h3 id="weather_text" class="subtitle is-5 mb-1"></h3> 
                     <h3 id="temp_f" class="subtitle is-5 "></h3>
                 </div>
-                <figure class="image is-3by1">
-                    <img id="temp_icon">
-                </figure>
+                    <div class="card-content is-justify-content-flex-end">
+                        <h3 id="feel_like" class="subtitle is-6 pt-4"></h3>
+                        <h3 id ="wind_mph" class="subtitle is-6"></h3>
+                        <h3 id ="precip" class="subtitle is-6"></h3>
+                        <h3 id ="humid" class="subtitle is-6 pb-4"></h3>
+                    </div>
                 
-                <div class="card">
-                    <h3 id="feel_like" class="subtitle is-6 pt-4"></h3>
-                    <h3 id ="wind_mph" class="subtitle is-6"></h3>
-                    <h3 id ="precip" class="subtitle is-6"></h3>
-                    <h3 id ="humid" class="subtitle is-6 pb-4"></h3>
-                </div>
             </div>
 
 
