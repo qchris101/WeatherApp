@@ -56,6 +56,7 @@ const errorUI = (message) => {
 const updateUI = (data) => {
     if(!data) return
     errorUI("")
+    document.querySelector(".mainInfo").style.display = "block"
     const {location, current } = data
     weatherElements.location_name.innerText = "Current Weather for " + data.location.name + ", "+ data.location.region
     weatherElements.temp_f.innerText = data.current.temp_f + "°F"

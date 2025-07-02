@@ -1,22 +1,28 @@
-/* .social-card {
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-  cursor: pointer;
-  border: 1px solid #4d4d4d;
-  border-radius: 8px;
-  padding: 0px 60px 0px 60px;
-
-} */
-
+html,body {
+  height: 100%;
+  background-color: #121212;
+  margin: 0;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
 
 .search-bar{
-    max-width: 400px;
+    max-width: 480px;
+    margin: 2rem auto 3rem auto;
+    
+}
+.mainInfo {
+  display: none;
 }
 
-#ImgDiv{
-  background-color: white;
+.search-Input {
+  background-color: #222 !important;
+  border-color: #444;
+  color: #e0e0e0;
 }
 
-h3 {
-
-  color: black !important;
+#ImgDiv {
+  background: #222;
+  backdrop-filter: blur(12px);
+  border-radius: 1rem;
 }

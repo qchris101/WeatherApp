@@ -6,19 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
 </head>
 <body>
     <p id="error_message" style="color: red; display: none;"></p>
-    <div class="container mt-6 search-bar">
-        <div class="box ">
+    <div class="container pt-6 search-bar">
+        <div class="box search-Input">
             <form action = "" method="get" id="weatherInfo" class="field has-addons is-justify-content-center">
                 <div class="control is-expanded ">
 
                     <input 
                     type="text" 
                     id="location" 
-                    class="input is-rounded " 
+                    class="input is-rounded has-text-white" 
                     placeholder="Search City or Zip Code">
                 </div>
 
@@ -39,39 +40,36 @@
 
         <div id="weatherDiv">
 
-            <!-- <figure class="image is-3by1">
-                <img id="temp_icon">
-            </figure> -->
             <div id="ImgDiv" class="card is-relative">
+                
                 <div class="card-content">
-                    <h3 id="location_name" class="title is-4 has-text-black" ></h3>
+                    <h3 id="location_name" class="title is-5 pt-3 ml-3" ></h3>
                 </div>
-                <div class="card-content">
-                    <figure class="image is-96x96">
-                        <img id="iconImg">
-                    </figure>
-                    
-                    <h3 id="weather_text" class="subtitle is-5 mb-1"></h3> 
-                    <h3 id="temp_f" class="subtitle is-5 "></h3>
-                </div>
-                    <div class="card-content is-justify-content-flex-end">
-                        <h3 id="feel_like" class="subtitle is-6 pt-4"></h3>
-                        <h3 id ="wind_mph" class="subtitle is-6"></h3>
-                        <h3 id ="precip" class="subtitle is-6"></h3>
-                        <h3 id ="humid" class="subtitle is-6 pb-4"></h3>
+                <div class="columns is-mobile is-variable is-2 m-0 p-0">
+                        
+                    <div class="column is-half">
+                        <div class="card-content py-2">
+                            <figure class="image is-64x64 mb-3 is-inline-block">
+                                <img id="iconImg" class="ml-6">
+                            </figure>
+                            
+                            <h3 id="weather_text" class="subtitle is-6 mb-1 ml-6"></h3> 
+                            <h3 id="temp_f" class="subtitle is-6 ml-6"></h3>
+                        </div>
                     </div>
-                
+
+                    <div class="column is-half">
+                        
+                        <div class="card-content py-2">
+                            <h3 id="feel_like" class="subtitle is-6 pt-2"></h3>
+                            <h3 id ="wind_mph" class="subtitle is-6"></h3>
+                            <h3 id ="precip" class="subtitle is-6"></h3>
+                            <h3 id ="humid" class="subtitle is-6 pb-2 mb-2"></h3>
+                        </div>
+                    </div>
+               
+                </div>
             </div>
-
-
-
-
-<!-- 
-            <div id="output" class="card-content" >
-
-
-                
-            </div> -->
         </div>
     </div>
     
